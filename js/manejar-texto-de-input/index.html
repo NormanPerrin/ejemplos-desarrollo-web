@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Queso</title>
+
+    <style>
+        input {
+            font-size: 2em;
+            padding: 5px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .azul {
+            background-color: steelblue;
+            transition: background-color 1s;
+        }
+
+        .verde {
+            background-color: green;
+            transition: background-color 1s;
+        }
+
+        .rojo {
+            background-color: firebrick;
+            transition: background-color 1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" oninput="manejarInput()" autofocus>
+
+    <h1></h1>
+
+    <script>
+        function manejarInput() {
+            const input = document.querySelector('input');
+            const valor = input.value;
+
+            if (valor === 'rojo' || valor === 'verde' || valor === 'azul') {
+                document.body.classList = valor;
+            }
+
+            const h1 = document.querySelector('h1');
+            h1.textContent = valor.split('').reverse().join('');
+        }
+    </script>
+</body>
+</html>

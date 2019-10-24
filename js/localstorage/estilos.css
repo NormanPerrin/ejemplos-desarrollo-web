@@ -1,0 +1,19 @@
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista button {
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: 15em;
+    border: 0;
+    background-color: #eee;
+    transition: transform .2s;
+}
+
+.lista button:active {
+    background-color: #d3d3d3;
+    transform: translateY(2px);
+    transition: transform .2s;
+}

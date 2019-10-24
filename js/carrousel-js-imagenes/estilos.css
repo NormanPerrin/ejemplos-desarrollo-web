@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.carrousel-contenedor {
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid #000;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.carrousel-scroll {
+    display: flex;
+}
+
+img {
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    background-color: #000;
+}
+
+.contenedor-botones button {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.contenedor-botones button:active {
+    transform: translateY(2px)
+}
+
+.contenedor-botones button:first-child {
+    margin-right: 10px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}

@@ -5,3 +5,4 @@
 - [fuentes](./fuentes)
 - [layout-portfolio](./layout-portfolio)
 - [media-queries](./media-queries)
+- [sections-scroll](./sections-scroll)

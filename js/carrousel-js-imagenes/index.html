@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Carrousel</title>
+</head>
+
+<body>
+    <div class="carrousel-contenedor">
+        <div class="carrousel-scroll">
+            <img src="./imagenes/gatsby.png" alt="gatsby">
+            <img src="./imagenes/netlify.png" alt="netlify">
+            <img src="./imagenes/redux.png" alt="redux">
+            <img src="./imagenes/sass.png" alt="sass">
+            <img src="./imagenes/react.png" alt="react">
+        </div>
+    </div>
+
+    <div class="contenedor-botones">
+        <button
+            onclick="scrollIzquierda()"
+            id="boton-izquierda"
+            disabled
+        >
+            <span role="img" aria-label="izquierda">
+                👈
+            </span>
+        </button>
+
+        <button
+            onclick="scrollDerecha()"
+            id="boton-derecha"
+        >
+            <span role="img" aria-label="derecha">
+                👉
+            </span>
+        </button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

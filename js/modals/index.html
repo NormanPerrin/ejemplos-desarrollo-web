@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modals</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <main>
+        <h1>Contenido principal</h1>
+        <section>
+            <a href="#" onclick="showModal('first')">modal #1</a>
+            <a href="#" onclick="showModal('middle')">modal #2</a>
+            <a href="#" onclick="showModal('last')">modal #3</a>
+        </section>
+    </main>
+
+    <div class="modal-container non-active" onclick="handleModalClick(event)">
+        <div id="first" class="hidden">
+            <h1>First</h1>
+            <a href="#" onclick="closeModal(this.parentElement)">X</a>
+        </div>
+        <div id="middle" class="hidden">
+            <h1>Middle</h1>
+            <a href="#" onclick="closeModal(this.parentElement)">X</a>
+        </div>
+        <div id="last" class="hidden">
+            <h1>Last</h1>
+            <a href="#" onclick="closeModal(this.parentElement)">X</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

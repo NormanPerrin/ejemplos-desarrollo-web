@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  background-color: #fafafa;
+}
+
+header nav a {
+  margin-right: 20px;
+}
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+main>section {
+  height: 100vh;
+  background-color: #333;
+}
+
+main>section:nth-child(even) {
+  background-color: #eee;
+}
+
+main>section a {
+  align-self: flex-start;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Feriados</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <!-- https://nolaborables.com.ar/api/v2/feriados/2019 -->
+    <form onsubmit="buscarFeriados(event)">
+        <input
+            type="number" name="feriado" id="feriado"
+            min="2011" max="2019"
+            autofocus required
+        >
+        <input type="submit" value="Buscar">
+    </form>
+
+    <table>
+        <tr>
+            <th>Motivo</th>
+            <th>Tipo</th>
+            <th>Día</th>
+            <th>Mes</th>
+        </tr>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+</html>

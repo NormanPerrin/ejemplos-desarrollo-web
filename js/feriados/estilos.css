@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    background-color: #444;
+}
+
+form input {
+    flex-grow: 1;
+    font-size: 2em;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: steelblue;
+    border: 0;
+    font-size: 1.3em;
+    color: #fafafa;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th,
+td {
+  padding: 10px;
+  width: 250px;
+}
+
+table th {
+  background-color: #333;
+  font-weight: normal;
+  color: #fafafa;
+}
+
+table td {
+  border: 1px solid #d3d3d3;
+  font-size: 14px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}

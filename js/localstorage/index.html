@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <h1>Elegí tu emoji preferido</h1>
+    <p>Importante: usar <a href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb">este</a> plugin para abrir este proyecto.</p>
+    <p>Podés recargar la página y vas a tener tu emoji guardado 😱</p>
+
+    <!--
+        Explicación:
+
+        Usamos el objeto global `localstorage` para almacenar y obtener
+        valores de nuestro "almacenamiento local" en el navegador.
+
+        Específicamente los valores que podemos almacenar son `strings`.
+        Y los almacenamos poniéndoles un nombre. En este caso:
+        `miProyecto:emojiSrc`.
+
+        Pueden ver su almacenamiento local yendo a las herramientas de
+        desarrollador, el tab Application, y en storage eligen Local Storage.
+    -->
+
+    <section class="lista">
+        <button onclick="seleccionar(this)">
+            <img src="./emojis/chori.png" alt="emoji chori">
+        </button>
+
+        <button onclick="seleccionar(this)">
+            <img src="./emojis/cremona.png" alt="emoji cremona">
+        </button>
+
+        <button onclick="seleccionar(this)">
+            <img src="./emojis/fernet.png" alt="emoji fernet">
+        </button>
+
+        <button onclick="seleccionar(this)">
+            <img src="./emojis/mate.png" alt="emoji mate">
+        </button>
+
+        <button onclick="seleccionar(this)">
+            <img src="./emojis/mila.png" alt="emoji mila">
+        </button>
+
+        <button onclick="seleccionar(this)">
+            <img src="./emojis/doge.png" alt="emoji mindblown">
+        </button>
+
+        <button onclick="seleccionar(this)">
+            <img src="./emojis/quien-te-conoce.png" alt="emoji ricardo">
+        </button>
+
+        <button onclick="seleccionar(this)">
+            <img src="./emojis/squartle.png" alt="emoji squartle">
+        </button>
+    </section>
+
+    <h3>Tu emoji preferido es...</h3>
+    <section class="seleccion">
+        <p>No tienes emoji preferido :(</p>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

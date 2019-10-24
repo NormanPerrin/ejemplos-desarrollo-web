@@ -1,0 +1,71 @@
+:root {
+  --cajita-size: 300px;
+}
+
+* {
+  box-sizing: content-box
+}
+
+html,
+body {
+  height: 100%
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: steelblue;
+  transition: transform .5s;
+}
+
+.modal.hidden {
+  transform: translateX(-100%);
+  transition: transform .5s ease-in-out;
+}
+
+.cajita {
+  width: var(--cajita-size);
+  height: var(--cajita-size);
+  border: 5px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 5px 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: 2em;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.play {
+  display: none
+}
+
+.cajita:hover {
+  background-color: #333
+}
+
+.cajita:hover h3 {
+  display: none
+}
+
+.cajita:hover .play {
+  display: block
+}
+
+.play.hidden {
+  display: none
+}
